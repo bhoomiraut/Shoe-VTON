@@ -78,27 +78,6 @@
       <div>
         <a href="virtualshoetryon.html" class="btn-get-started scrollto">Virtual Shoe Try On</a>
       </div>
-      <div>
-        <p id="deploymentId">Fetching Deployment ID...</p>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch('/amplify/metadata')
-      .then(res => res.json())
-      .then(data => {
-        if (data.deploymentId) {
-          document.getElementById("deploymentId").innerText = "Deployment ID: " + data.deploymentId;
-        } else {
-          document.getElementById("deploymentId").innerText = "Deployment ID not found!";
-        }
-      })
-      .catch(() => {
-        document.getElementById("deploymentId").innerText = "Error fetching Deployment ID!";
-      });
-  });
-</script>
-
-
-      </div>
     </div>
 
     <div class="hero-slider swiper">
